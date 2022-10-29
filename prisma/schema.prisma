@@ -12,10 +12,10 @@ datasource db {
   referentialIntegrity = "prisma"
 }
 
-model Example {
-  id        String   @id @default(cuid())
+model ShoppingItem {
+  id        String  @id @default(cuid())
   // createdAt DateTime @default(now())
   // updatedAt DateTime @updatedAt
-  name String
-  IsChecked Boolean
+  name      String
+  IsChecked Boolean @default(false)
 }
